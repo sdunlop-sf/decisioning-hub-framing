@@ -558,13 +558,13 @@
                 <div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 14px; max-width: 720px; margin: 0 auto;">
                     <div style="background: var(--card); border: 1px solid var(--border); border-radius: 12px; padding: 20px 16px; text-align: left;">
                         <div style="font-size: 28px; font-weight: 900; color: var(--amber); margin-bottom: 6px;">?</div>
-                        <div style="font-size: 14px; font-weight: 700; color: var(--text); margin-bottom: 4px;">Wrong truck dispatched</div>
-                        <div style="font-size: 13px; color: var(--muted); line-height: 1.5;">No data used during triage. Manual guesswork on vehicle type and location.</div>
+                        <div style="font-size: 14px; font-weight: 700; color: var(--text); margin-bottom: 4px;">No context during ERA</div>
+                        <div style="font-size: 13px; color: var(--muted); line-height: 1.5;">Agent resolves the breakdown, but has no insight into this member&rsquo;s relationship &mdash; renewal risk, coverage gaps, upsell opportunity.</div>
                     </div>
                     <div style="background: var(--card); border: 1px solid var(--border); border-radius: 12px; padding: 20px 16px; text-align: left;">
                         <div style="font-size: 28px; font-weight: 900; color: var(--amber); margin-bottom: 6px;">?</div>
-                        <div style="font-size: 14px; font-weight: 700; color: var(--text); margin-bottom: 4px;">Manual hotel calls</div>
-                        <div style="font-size: 13px; color: var(--muted); line-height: 1.5;">Consultants ring around for accommodation. Time wasted, budget adherence varies.</div>
+                        <div style="font-size: 14px; font-weight: 700; color: var(--text); margin-bottom: 4px;">No follow-through</div>
+                        <div style="font-size: 13px; color: var(--muted); line-height: 1.5;">ERA resolved, member hangs up, nothing happens. No intelligent follow-up based on what just occurred.</div>
                     </div>
                     <div style="background: var(--card); border: 1px solid var(--border); border-radius: 12px; padding: 20px 16px; text-align: left;">
                         <div style="font-size: 28px; font-weight: 900; color: var(--amber); margin-bottom: 6px;">?</div>
@@ -600,11 +600,11 @@
 
                     <div class="stream-row">
                         <div class="stream-label">
-                            <span class="stream-label-name">ERA Triage</span>
+                            <span class="stream-label-name">ERA Context</span>
                             <span class="stream-label-sub">Emergency Roadside</span>
                         </div>
-                        <div class="stream-cell">Inconsistent triage questions. Wrong vehicle dispatched. <span class="pain">Extended benefits booked manually.</span></div>
-                        <div class="stream-cell sf">Deterministic coverage check + eligibility rules fire instantly. Accommodation and taxi recommendations composed automatically for premium members.</div>
+                        <div class="stream-cell">Agentforce handles the ERA call &mdash; but the agent has no relationship context. <span class="pain">Missed opportunity to surface renewal risk, coverage gaps, or loyalty actions.</span></div>
+                        <div class="stream-cell sf">While Agentforce triages the breakdown, the decisioning engine evaluates this member&rsquo;s full relationship &mdash; tenure, recent interactions, coverage tier &mdash; and surfaces the right NBA for during or after the call.</div>
                     </div>
 
                     <div class="stream-row">
@@ -635,7 +635,7 @@
                             <div style="width: 8px; height: 8px; border-radius: 50%; background: var(--blue2); flex-shrink: 0;"></div>
                             <div style="font-size: 12px; font-weight: 800; letter-spacing: 0.13em; text-transform: uppercase; color: var(--blue2);">Tier 1 &middot; ML at Scale</div>
                         </div>
-                        <div style="font-size: 14px; color: var(--text); font-weight: 600; margin-bottom: 4px; padding-left: 16px;">Coverage check. Tow dispatch. Renewal prompt.</div>
+                        <div style="font-size: 14px; color: var(--text); font-weight: 600; margin-bottom: 4px; padding-left: 16px;">Renewal prompt. Coverage upgrade. Retention offer.</div>
                         <div style="font-size: 14px; color: var(--muted); line-height: 1.6; padding-left: 16px;">Einstein Studio scores every action, Flow arbitrates the winner. Fast, deterministic, auditable. Handles 80% of decisions.</div>
                     </div>
                     <div style="flex: 1; padding: 20px 22px; border-right: 1px solid var(--border); text-align: left;">
@@ -669,43 +669,43 @@
             <div style="max-width: 1000px; width: 100%;">
                 <div class="accent-line" style="margin: 0 auto 12px;"></div>
                 <div class="eyebrow" style="text-align: center;">Rachel&rsquo;s Breakdown &mdash; What the Engine Does</div>
-                <h2 class="big" style="font-size: clamp(22px, 2.6vw, 36px); margin-bottom: 32px; text-align: center;">Late at night, Great Ocean Road. <span class="hl">200ms later, the decision is made.</span></h2>
+                <h2 class="big" style="font-size: clamp(22px, 2.6vw, 36px); margin-bottom: 32px; text-align: center;">Agentforce handles the emergency.<br><span class="hl">The Decisioning Hub handles the relationship.</span></h2>
 
                 <div class="timeline">
                     <div class="tl-step">
                         <div class="tl-dot blue"></div>
-                        <div class="tl-label" style="color: var(--blue2);">Signal</div>
+                        <div class="tl-label" style="color: var(--blue2);">ERA Call</div>
                         <div class="tl-title">Rachel calls in</div>
-                        <div class="tl-desc">ERA Total Care member. Vehicle: 2019 Mazda CX-5. Location: Great Ocean Road, 45km from Torquay.</div>
+                        <div class="tl-desc">Agentforce triages the breakdown &mdash; vehicle, location, dispatch. That&rsquo;s operational. In parallel, the decisioning engine evaluates Rachel&rsquo;s full relationship.</div>
                     </div>
                     <div class="tl-step">
                         <div class="tl-dot blue"></div>
                         <div class="tl-label" style="color: var(--blue2);">Score &amp; Arbitrate</div>
-                        <div class="tl-title">Coverage verified</div>
-                        <div class="tl-desc">Engine checks policy tier, confirms towing entitlement (100km), and confirms premium accommodation benefit. All deterministic &mdash; no guesswork.</div>
+                        <div class="tl-title">Relationship evaluated</div>
+                        <div class="tl-desc">12-year member. Renewal in 23 days. On basic cover &mdash; tonight&rsquo;s incident reveals a coverage gap. Three callouts this year. Engine scores: retention risk elevated.</div>
                     </div>
                     <div class="tl-step">
                         <div class="tl-dot blue"></div>
                         <div class="tl-label" style="color: var(--blue2);">Recommend</div>
-                        <div class="tl-title">Entitlements surfaced</div>
-                        <div class="tl-desc">Tow to nearest RACV-approved repairer + Wyndham Resort Torquay. Standard benefits for her tier, instantly resolved &mdash; no manual calls required.</div>
+                        <div class="tl-title">NBA surfaced</div>
+                        <div class="tl-desc">Agent screen shows: &ldquo;After resolving ERA &mdash; offer Total Care upgrade. Member would have had accommodation tonight. Renewal in 23 days.&rdquo; Contextual, specific, timed.</div>
                     </div>
                     <div class="tl-step">
                         <div class="tl-dot gold"></div>
-                        <div class="tl-label" style="color: #C89000;">Dispatch</div>
-                        <div class="tl-title">Officer sees recommendation</div>
-                        <div class="tl-desc">Triage screen shows the recommended actions with full rationale. Officer confirms and dispatches. Consistent experience regardless of who picks up the phone.</div>
+                        <div class="tl-label" style="color: #C89000;">Follow-up</div>
+                        <div class="tl-title">Post-ERA action fired</div>
+                        <div class="tl-desc">48 hours later, a personalised email: &ldquo;We hope you got home safely. Here&rsquo;s what Total Care would have covered.&rdquo; Channel, timing, and content all selected by the engine.</div>
                     </div>
                     <div class="tl-step">
                         <div class="tl-dot green"></div>
                         <div class="tl-label" style="color: var(--green);">Learn</div>
                         <div class="tl-title">Outcome recorded</div>
-                        <div class="tl-desc">Rachel accepts. Outcome feeds back to Einstein Studio. The model gets better at predicting which members need accommodation proactively.</div>
+                        <div class="tl-desc">Rachel upgrades at renewal. Outcome feeds back. The model learns: ERA + coverage gap + approaching renewal = high-conversion upgrade moment.</div>
                     </div>
                 </div>
 
                 <div style="text-align: center; margin-top: 28px;">
-                    <span style="font-size: 13px; color: var(--muted);">Every step is auditable. Every outcome improves the model. No black box.</span>
+                    <span style="font-size: 13px; color: var(--muted);">Agentforce resolves the moment. The Decisioning Hub turns every moment into compounding relationship intelligence.</span>
                 </div>
             </div>
         </section>
