@@ -558,8 +558,8 @@
                 <div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 14px; max-width: 720px; margin: 0 auto;">
                     <div style="background: var(--card); border: 1px solid var(--border); border-radius: 12px; padding: 20px 16px; text-align: left;">
                         <div style="font-size: 28px; font-weight: 900; color: var(--amber); margin-bottom: 6px;">?</div>
-                        <div style="font-size: 14px; font-weight: 700; color: var(--text); margin-bottom: 4px;">No context during ERA</div>
-                        <div style="font-size: 13px; color: var(--muted); line-height: 1.5;">Agent resolves the breakdown, but has no insight into this member&rsquo;s relationship &mdash; renewal risk, coverage gaps, upsell opportunity.</div>
+                        <div style="font-size: 14px; font-weight: 700; color: var(--text); margin-bottom: 4px;">No actionable insight during ERA</div>
+                        <div style="font-size: 13px; color: var(--muted); line-height: 1.5;">The data exists in CRM &mdash; but it&rsquo;s not surfaced as a recommendation. Agent resolves the breakdown with no visibility into renewal risk, coverage gaps, or upsell opportunity.</div>
                     </div>
                     <div style="background: var(--card); border: 1px solid var(--border); border-radius: 12px; padding: 20px 16px; text-align: left;">
                         <div style="font-size: 28px; font-weight: 900; color: var(--amber); margin-bottom: 6px;">?</div>
@@ -575,44 +575,40 @@
             </div>
         </section>
 
-        <!-- ═══════════ SLIDE 3: Three Streams ═══════════ -->
+        <!-- ═══════════ SLIDE 3: Three Streams — With Decisioning ═══════════ -->
         <section class="slide">
             <div style="max-width: 960px; width: 100%;">
                 <div class="accent-line" style="margin: 0 auto 12px;"></div>
-                <div class="eyebrow" style="text-align: center;">Your Three Streams</div>
-                <h2 class="big" style="font-size: clamp(26px, 3vw, 40px); margin-bottom: 28px; text-align: center;">One decisioning engine. <span class="hl">Three immediate outcomes.</span></h2>
+                <div class="eyebrow" style="text-align: center;">With Decisioning</div>
+                <h2 class="big" style="font-size: clamp(26px, 3vw, 40px); margin-bottom: 28px; text-align: center;">One engine. <span class="hl">Three immediate outcomes.</span></h2>
 
                 <div class="streams-grid">
-                    <div class="stream-row header">
+                    <div class="stream-row header" style="grid-template-columns: 200px 1fr;">
                         <div>Stream</div>
-                        <div>Today</div>
-                        <div>With Decisioning</div>
+                        <div style="color: var(--blue2);">What Changes</div>
                     </div>
 
-                    <div class="stream-row">
+                    <div class="stream-row" style="grid-template-columns: 200px 1fr;">
                         <div class="stream-label">
                             <span class="stream-label-name">Member Engagement</span>
                             <span class="stream-label-sub">Call centre + portal</span>
                         </div>
-                        <div class="stream-cell">Service agent on a live call has no recommendation on screen. <span class="pain">No visibility into what this member needs right now.</span></div>
                         <div class="stream-cell sf">Engine scores the member&rsquo;s live profile and pushes the single best action to the agent&rsquo;s screen mid-call &mdash; renewal prompt, coverage upgrade, address update &mdash; contextual to this member, this moment.</div>
                     </div>
 
-                    <div class="stream-row">
+                    <div class="stream-row" style="grid-template-columns: 200px 1fr;">
                         <div class="stream-label">
                             <span class="stream-label-name">ERA Context</span>
                             <span class="stream-label-sub">Emergency Roadside</span>
                         </div>
-                        <div class="stream-cell">Agentforce handles the ERA call &mdash; but the agent has no relationship context. <span class="pain">Missed opportunity to surface renewal risk, coverage gaps, or loyalty actions.</span></div>
                         <div class="stream-cell sf">While Agentforce triages the breakdown, the decisioning engine evaluates this member&rsquo;s full relationship &mdash; tenure, recent interactions, coverage tier &mdash; and surfaces the right NBA for during or after the call.</div>
                     </div>
 
-                    <div class="stream-row">
+                    <div class="stream-row" style="grid-template-columns: 200px 1fr;">
                         <div class="stream-label">
                             <span class="stream-label-name">Next Best Interaction</span>
                             <span class="stream-label-sub">Personalisation</span>
                         </div>
-                        <div class="stream-cell">Batch campaigns on a fixed schedule. <span class="pain">Every member gets the same cadence regardless of behaviour.</span></div>
                         <div class="stream-cell sf">Model scores every available action for this member right now and fires the best one. When their state changes &mdash; renewal, claim, new product &mdash; the model re-scores. Event-driven, not a drip sequence.</div>
                     </div>
                 </div>
@@ -623,94 +619,7 @@
             </div>
         </section>
 
-        <!-- ═══════════ SLIDE 4: How It Works — Three Modes ═══════════ -->
-        <section class="slide">
-            <div style="max-width: 980px; width: 100%;">
-                <div class="accent-line" style="margin: 0 auto 16px;"></div>
-                <h2 class="big" style="font-size: clamp(26px, 3vw, 42px); margin-bottom: 32px; text-align: center;">Deterministic when it can be.<br>Reasoning when it should be.<br>Creative when it has to be.</h2>
-
-                <div style="display: flex; border: 1px solid var(--border); border-radius: 12px; overflow: hidden; margin-bottom: 20px; background: rgba(255,255,255,0.5);">
-                    <div style="flex: 1; padding: 20px 22px; border-right: 1px solid var(--border); text-align: left;">
-                        <div style="display: flex; align-items: center; gap: 8px; margin-bottom: 6px;">
-                            <div style="width: 8px; height: 8px; border-radius: 50%; background: var(--blue2); flex-shrink: 0;"></div>
-                            <div style="font-size: 12px; font-weight: 800; letter-spacing: 0.13em; text-transform: uppercase; color: var(--blue2);">Tier 1 &middot; ML at Scale</div>
-                        </div>
-                        <div style="font-size: 14px; color: var(--text); font-weight: 600; margin-bottom: 4px; padding-left: 16px;">Renewal prompt. Coverage upgrade. Retention offer.</div>
-                        <div style="font-size: 14px; color: var(--muted); line-height: 1.6; padding-left: 16px;">Einstein Studio scores every action, Flow arbitrates the winner. Fast, deterministic, auditable. Handles 80% of decisions.</div>
-                    </div>
-                    <div style="flex: 1; padding: 20px 22px; border-right: 1px solid var(--border); text-align: left;">
-                        <div style="display: flex; align-items: center; gap: 8px; margin-bottom: 6px;">
-                            <div style="width: 8px; height: 8px; border-radius: 50%; background: #007A72; flex-shrink: 0;"></div>
-                            <div style="font-size: 12px; font-weight: 800; letter-spacing: 0.13em; text-transform: uppercase; color: #007A72;">Tier 2 &middot; Agentic Reasoning</div>
-                        </div>
-                        <div style="font-size: 14px; color: var(--text); font-weight: 600; margin-bottom: 4px; padding-left: 16px;">Premium member, conflicting signals, edge case.</div>
-                        <div style="font-size: 14px; color: var(--muted); line-height: 1.6; padding-left: 16px;">Agentforce evaluates using live context and full member history. For the 15% of decisions that rules can&rsquo;t resolve.</div>
-                    </div>
-                    <div style="flex: 1; padding: 20px 22px; text-align: left;">
-                        <div style="display: flex; align-items: center; gap: 8px; margin-bottom: 6px;">
-                            <div style="width: 8px; height: 8px; border-radius: 50%; background: #C89000; flex-shrink: 0;"></div>
-                            <div style="font-size: 12px; font-weight: 800; letter-spacing: 0.13em; text-transform: uppercase; color: #C89000;">Composed &middot; Creative</div>
-                        </div>
-                        <div style="font-size: 14px; color: var(--text); font-weight: 600; margin-bottom: 4px; padding-left: 16px;">Bespoke win-back. Tailored onboarding.</div>
-                        <div style="font-size: 14px; color: var(--muted); line-height: 1.6; padding-left: 16px;">When no catalogue action fits this member, the engine composes a new treatment within guardrails. Human-reviewed before dispatch.</div>
-                    </div>
-                </div>
-
-                <div style="display: flex; align-items: center; gap: 8px; justify-content: center;">
-                    <img src="icon-slack.png" alt="Slack" style="width:14px;height:14px;object-fit:contain;opacity:0.4;">
-                    <img src="icon-agentforce.png" alt="Agentforce" style="width:14px;height:14px;object-fit:contain;opacity:0.4;">
-                    <div style="font-size: 11px; color: rgba(0,39,117,0.38); line-height: 1.4;"><strong style="color: rgba(0,39,117,0.45); font-weight: 600;">Every decision is traceable, auditable, and improvable.</strong> The engine learns from every outcome.</div>
-                </div>
-            </div>
-        </section>
-
-        <!-- ═══════════ SLIDE 5: Rachel's Breakdown — Worked Example ═══════════ -->
-        <section class="slide">
-            <div style="max-width: 1000px; width: 100%;">
-                <div class="accent-line" style="margin: 0 auto 12px;"></div>
-                <div class="eyebrow" style="text-align: center;">Rachel&rsquo;s Breakdown &mdash; What the Engine Does</div>
-                <h2 class="big" style="font-size: clamp(22px, 2.6vw, 36px); margin-bottom: 32px; text-align: center;">Agentforce handles the emergency.<br><span class="hl">The Decisioning Hub handles the relationship.</span></h2>
-
-                <div class="timeline">
-                    <div class="tl-step">
-                        <div class="tl-dot blue"></div>
-                        <div class="tl-label" style="color: var(--blue2);">ERA Call</div>
-                        <div class="tl-title">Rachel calls in</div>
-                        <div class="tl-desc">Agentforce triages the breakdown &mdash; vehicle, location, dispatch. That&rsquo;s operational. In parallel, the decisioning engine evaluates Rachel&rsquo;s full relationship.</div>
-                    </div>
-                    <div class="tl-step">
-                        <div class="tl-dot blue"></div>
-                        <div class="tl-label" style="color: var(--blue2);">Score &amp; Arbitrate</div>
-                        <div class="tl-title">Relationship evaluated</div>
-                        <div class="tl-desc">12-year member. Renewal in 23 days. On basic cover &mdash; tonight&rsquo;s incident reveals a coverage gap. Three callouts this year. Engine scores: retention risk elevated.</div>
-                    </div>
-                    <div class="tl-step">
-                        <div class="tl-dot blue"></div>
-                        <div class="tl-label" style="color: var(--blue2);">Recommend</div>
-                        <div class="tl-title">NBA surfaced</div>
-                        <div class="tl-desc">Agent screen shows: &ldquo;After resolving ERA &mdash; offer Total Care upgrade. Member would have had accommodation tonight. Renewal in 23 days.&rdquo; Contextual, specific, timed.</div>
-                    </div>
-                    <div class="tl-step">
-                        <div class="tl-dot gold"></div>
-                        <div class="tl-label" style="color: #C89000;">Follow-up</div>
-                        <div class="tl-title">Post-ERA action fired</div>
-                        <div class="tl-desc">48 hours later, a personalised email: &ldquo;We hope you got home safely. Here&rsquo;s what Total Care would have covered.&rdquo; Channel, timing, and content all selected by the engine.</div>
-                    </div>
-                    <div class="tl-step">
-                        <div class="tl-dot green"></div>
-                        <div class="tl-label" style="color: var(--green);">Learn</div>
-                        <div class="tl-title">Outcome recorded</div>
-                        <div class="tl-desc">Rachel upgrades at renewal. Outcome feeds back. The model learns: ERA + coverage gap + approaching renewal = high-conversion upgrade moment.</div>
-                    </div>
-                </div>
-
-                <div style="text-align: center; margin-top: 28px;">
-                    <span style="font-size: 13px; color: var(--muted);">Agentforce resolves the moment. The Decisioning Hub turns every moment into compounding relationship intelligence.</span>
-                </div>
-            </div>
-        </section>
-
-        <!-- ═══════════ SLIDE 6: The Platform — Five Layers ═══════════ -->
+        <!-- ═══════════ SLIDE 4: The Platform — Five Layers ═══════════ -->
         <section class="slide">
             <div style="max-width: 980px; width: 100%; text-align: left;">
                 <div class="accent-line" style="margin-bottom: 12px;"></div>
@@ -790,7 +699,7 @@
             </div>
         </section>
 
-        <!-- ═══════════ SLIDE 7: Demo Transition ═══════════ -->
+        <!-- ═══════════ SLIDE 5: Demo Transition ═══════════ -->
         <section class="slide">
             <div style="text-align: center; max-width: 700px;">
                 <div class="accent-line" style="margin: 0 auto 20px;"></div>
@@ -817,6 +726,93 @@
                 </div>
             </div>
             <div class="star-deco" style="top: 100px; right: 120px;"><img src="sf-star-gold.png" alt=""></div>
+        </section>
+
+        <!-- ═══════════ SLIDE 6: How It Works — Three Modes ═══════════ -->
+        <section class="slide">
+            <div style="max-width: 980px; width: 100%;">
+                <div class="accent-line" style="margin: 0 auto 16px;"></div>
+                <h2 class="big" style="font-size: clamp(26px, 3vw, 42px); margin-bottom: 32px; text-align: center;">Deterministic when it can be.<br>Reasoning when it should be.<br>Creative when it has to be.</h2>
+
+                <div style="display: flex; border: 1px solid var(--border); border-radius: 12px; overflow: hidden; margin-bottom: 20px; background: rgba(255,255,255,0.5);">
+                    <div style="flex: 1; padding: 20px 22px; border-right: 1px solid var(--border); text-align: left;">
+                        <div style="display: flex; align-items: center; gap: 8px; margin-bottom: 6px;">
+                            <div style="width: 8px; height: 8px; border-radius: 50%; background: var(--blue2); flex-shrink: 0;"></div>
+                            <div style="font-size: 12px; font-weight: 800; letter-spacing: 0.13em; text-transform: uppercase; color: var(--blue2);">Tier 1 &middot; ML at Scale</div>
+                        </div>
+                        <div style="font-size: 14px; color: var(--text); font-weight: 600; margin-bottom: 4px; padding-left: 16px;">Renewal prompt. Coverage upgrade. Retention offer.</div>
+                        <div style="font-size: 14px; color: var(--muted); line-height: 1.6; padding-left: 16px;">Einstein Studio scores every action, Flow arbitrates the winner. Fast, deterministic, auditable. Handles 80% of decisions.</div>
+                    </div>
+                    <div style="flex: 1; padding: 20px 22px; border-right: 1px solid var(--border); text-align: left;">
+                        <div style="display: flex; align-items: center; gap: 8px; margin-bottom: 6px;">
+                            <div style="width: 8px; height: 8px; border-radius: 50%; background: #007A72; flex-shrink: 0;"></div>
+                            <div style="font-size: 12px; font-weight: 800; letter-spacing: 0.13em; text-transform: uppercase; color: #007A72;">Tier 2 &middot; Agentic Reasoning</div>
+                        </div>
+                        <div style="font-size: 14px; color: var(--text); font-weight: 600; margin-bottom: 4px; padding-left: 16px;">Premium member, conflicting signals, edge case.</div>
+                        <div style="font-size: 14px; color: var(--muted); line-height: 1.6; padding-left: 16px;">Agentforce evaluates using live context and full member history. For the 15% of decisions that rules can&rsquo;t resolve.</div>
+                    </div>
+                    <div style="flex: 1; padding: 20px 22px; text-align: left;">
+                        <div style="display: flex; align-items: center; gap: 8px; margin-bottom: 6px;">
+                            <div style="width: 8px; height: 8px; border-radius: 50%; background: #C89000; flex-shrink: 0;"></div>
+                            <div style="font-size: 12px; font-weight: 800; letter-spacing: 0.13em; text-transform: uppercase; color: #C89000;">Composed &middot; Creative</div>
+                        </div>
+                        <div style="font-size: 14px; color: var(--text); font-weight: 600; margin-bottom: 4px; padding-left: 16px;">Bespoke win-back. Tailored onboarding.</div>
+                        <div style="font-size: 14px; color: var(--muted); line-height: 1.6; padding-left: 16px;">When no catalogue action fits this member, the engine composes a new treatment within guardrails. Human-reviewed before dispatch.</div>
+                    </div>
+                </div>
+
+                <div style="display: flex; align-items: center; gap: 8px; justify-content: center;">
+                    <img src="icon-slack.png" alt="Slack" style="width:14px;height:14px;object-fit:contain;opacity:0.4;">
+                    <img src="icon-agentforce.png" alt="Agentforce" style="width:14px;height:14px;object-fit:contain;opacity:0.4;">
+                    <div style="font-size: 11px; color: rgba(0,39,117,0.38); line-height: 1.4;"><strong style="color: rgba(0,39,117,0.45); font-weight: 600;">Every decision is traceable, auditable, and improvable.</strong> The engine learns from every outcome.</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ═══════════ SLIDE 7: Rachel's Breakdown — Worked Example ═══════════ -->
+        <section class="slide">
+            <div style="max-width: 1000px; width: 100%;">
+                <div class="accent-line" style="margin: 0 auto 12px;"></div>
+                <div class="eyebrow" style="text-align: center;">Rachel&rsquo;s Breakdown &mdash; What the Engine Does</div>
+                <h2 class="big" style="font-size: clamp(22px, 2.6vw, 36px); margin-bottom: 32px; text-align: center;">Agentforce handles the emergency.<br><span class="hl">The Decisioning Hub handles the relationship.</span></h2>
+
+                <div class="timeline">
+                    <div class="tl-step">
+                        <div class="tl-dot blue"></div>
+                        <div class="tl-label" style="color: var(--blue2);">ERA Call</div>
+                        <div class="tl-title">Rachel calls in</div>
+                        <div class="tl-desc">Agentforce triages the breakdown &mdash; vehicle, location, dispatch. That&rsquo;s operational. In parallel, the decisioning engine evaluates Rachel&rsquo;s full relationship.</div>
+                    </div>
+                    <div class="tl-step">
+                        <div class="tl-dot blue"></div>
+                        <div class="tl-label" style="color: var(--blue2);">Score &amp; Arbitrate</div>
+                        <div class="tl-title">Relationship evaluated</div>
+                        <div class="tl-desc">12-year member. Renewal in 23 days. On basic cover &mdash; tonight&rsquo;s incident reveals a coverage gap. Three callouts this year. Engine scores: retention risk elevated.</div>
+                    </div>
+                    <div class="tl-step">
+                        <div class="tl-dot blue"></div>
+                        <div class="tl-label" style="color: var(--blue2);">Recommend</div>
+                        <div class="tl-title">NBA surfaced</div>
+                        <div class="tl-desc">Agent screen shows: &ldquo;After resolving ERA &mdash; offer Total Care upgrade. Member would have had accommodation tonight. Renewal in 23 days.&rdquo; Contextual, specific, timed.</div>
+                    </div>
+                    <div class="tl-step">
+                        <div class="tl-dot gold"></div>
+                        <div class="tl-label" style="color: #C89000;">Follow-up</div>
+                        <div class="tl-title">Post-ERA action fired</div>
+                        <div class="tl-desc">48 hours later, a personalised email: &ldquo;We hope you got home safely. Here&rsquo;s what Total Care would have covered.&rdquo; Channel, timing, and content all selected by the engine.</div>
+                    </div>
+                    <div class="tl-step">
+                        <div class="tl-dot green"></div>
+                        <div class="tl-label" style="color: var(--green);">Learn</div>
+                        <div class="tl-title">Outcome recorded</div>
+                        <div class="tl-desc">Rachel upgrades at renewal. Outcome feeds back. The model learns: ERA + coverage gap + approaching renewal = high-conversion upgrade moment.</div>
+                    </div>
+                </div>
+
+                <div style="text-align: center; margin-top: 28px;">
+                    <span style="font-size: 13px; color: var(--muted);">Agentforce resolves the moment. The Decisioning Hub turns every moment into compounding relationship intelligence.</span>
+                </div>
+            </div>
         </section>
 
         <!-- ═══════════ SLIDE 8: Questions ═══════════ -->
