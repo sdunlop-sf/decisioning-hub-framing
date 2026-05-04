@@ -837,152 +837,110 @@
             </div>
         </section>
 
-        <!-- ═══════════ SLIDE 6: 18 Headless Decisioning Actions ═══════════ -->
-        <section class="slide" style="padding-top: 36px; padding-bottom: 64px;">
-            <div style="max-width: 1000px; width: 100%; margin: 0 auto; text-align: center;">
-                <div class="accent-line" style="margin: 0 auto 8px;"></div>
-                <div class="eyebrow" style="text-align: center; margin: 0 auto 6px; font-size: 12px;">Headless Decisioning</div>
-                <h2 class="big" style="text-align: center; font-size: clamp(22px, 2.4vw, 32px); margin: 0 auto 6px;">18 actions. <span class="hl">Fully headless.</span></h2>
-                <p class="sub" style="text-align: center; margin: 0 auto 4px; max-width: 680px; font-size: clamp(13px, 1.2vw, 15px);">Every capability of the decisioning engine exposed as an MCP tool. Any AI agent can query, create, simulate, and approve &mdash; conversationally.</p>
+        <!-- ═══════════ SLIDE 6: 30 Headless Decisioning Actions ═══════════ -->
+        <section class="slide" style="padding-top: 28px; padding-bottom: 64px;">
+            <div style="max-width: 1060px; width: 100%; margin: 0 auto; text-align: center;">
+                <div class="accent-line" style="margin: 0 auto 6px;"></div>
+                <div class="eyebrow" style="text-align: center; margin: 0 auto 4px; font-size: 11px;">Headless Decisioning</div>
+                <h2 class="big" style="text-align: center; font-size: clamp(20px, 2.2vw, 28px); margin: 0 auto 4px;">30 tools. <span class="hl">Fully headless.</span></h2>
+                <p class="sub" style="text-align: center; margin: 0 auto 8px; max-width: 680px; font-size: clamp(12px, 1.1vw, 14px);">Every capability exposed as an MCP tool. Any AI agent can query, decide, learn, and act &mdash; conversationally.</p>
 
-                <div class="tool-cats" style="justify-content: center; margin-left: auto; margin-right: auto;">
-                    <span class="tool-cat actions">Actions</span>
-                    <span class="tool-cat decisions">Decisions</span>
-                    <span class="tool-cat health">Health &amp; Analytics</span>
-                    <span class="tool-cat compositions">Compositions</span>
-                    <span class="tool-cat config">Config &amp; Simulation</span>
+                <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; text-align: left;">
+
+                    <!-- DECIDE -->
+                    <div style="background: var(--card); border: 1px solid var(--border); border-radius: 10px; padding: 12px 14px;">
+                        <div style="font-size: 10px; font-weight: 800; letter-spacing: 0.1em; text-transform: uppercase; color: var(--blue2); margin-bottom: 8px; display: flex; align-items: center; gap: 6px;">
+                            <span style="width: 6px; height: 6px; border-radius: 50%; background: var(--blue2);"></span>
+                            Decide &amp; Execute
+                        </div>
+                        <div style="display: flex; flex-direction: column; gap: 4px;">
+                            <div style="font-size: 12px; font-family: 'SF Mono','Fira Code',monospace; padding: 4px 8px; border-radius: 5px; background: rgba(2,42,192,0.06); border: 1px solid rgba(2,42,192,0.14); font-weight: 600; color: var(--text);">run_simulation</div>
+                            <div style="font-size: 12px; font-family: 'SF Mono','Fira Code',monospace; padding: 4px 8px; border-radius: 5px; background: rgba(2,42,192,0.06); border: 1px solid rgba(2,42,192,0.14); font-weight: 600; color: var(--text);">execute_decision</div>
+                            <div style="font-size: 12px; font-family: 'SF Mono','Fira Code',monospace; padding: 4px 8px; border-radius: 5px; background: rgba(2,42,192,0.06); border: 1px solid rgba(2,42,192,0.14); font-weight: 600; color: var(--text);">dispatch_segment</div>
+                            <div style="font-size: 12px; font-family: 'SF Mono','Fira Code',monospace; padding: 4px 8px; border-radius: 5px; color: var(--muted);">get_execution_status</div>
+                            <div style="font-size: 12px; font-family: 'SF Mono','Fira Code',monospace; padding: 4px 8px; border-radius: 5px; color: var(--muted);">retry_execution</div>
+                        </div>
+                    </div>
+
+                    <!-- LEARN -->
+                    <div style="background: var(--card); border: 1px solid var(--border); border-radius: 10px; padding: 12px 14px;">
+                        <div style="font-size: 10px; font-weight: 800; letter-spacing: 0.1em; text-transform: uppercase; color: #5521A8; margin-bottom: 8px; display: flex; align-items: center; gap: 6px;">
+                            <span style="width: 6px; height: 6px; border-radius: 50%; background: #5521A8;"></span>
+                            Learn &amp; Attribute
+                        </div>
+                        <div style="display: flex; flex-direction: column; gap: 4px;">
+                            <div style="font-size: 12px; font-family: 'SF Mono','Fira Code',monospace; padding: 4px 8px; border-radius: 5px; background: rgba(122,61,214,0.06); border: 1px solid rgba(122,61,214,0.14); font-weight: 600; color: var(--text);">query_decisions</div>
+                            <div style="font-size: 12px; font-family: 'SF Mono','Fira Code',monospace; padding: 4px 8px; border-radius: 5px; background: rgba(122,61,214,0.06); border: 1px solid rgba(122,61,214,0.14); font-weight: 600; color: var(--text);">explain_decision</div>
+                            <div style="font-size: 12px; font-family: 'SF Mono','Fira Code',monospace; padding: 4px 8px; border-radius: 5px; background: rgba(122,61,214,0.06); border: 1px solid rgba(122,61,214,0.14); font-weight: 600; color: var(--text);">get_attribution</div>
+                            <div style="font-size: 12px; font-family: 'SF Mono','Fira Code',monospace; padding: 4px 8px; border-radius: 5px; color: var(--muted);">get_attribution_trend</div>
+                            <div style="font-size: 12px; font-family: 'SF Mono','Fira Code',monospace; padding: 4px 8px; border-radius: 5px; color: var(--muted);">get_clv_attribution</div>
+                        </div>
+                    </div>
+
+                    <!-- MONITOR -->
+                    <div style="background: var(--card); border: 1px solid var(--border); border-radius: 10px; padding: 12px 14px;">
+                        <div style="font-size: 10px; font-weight: 800; letter-spacing: 0.1em; text-transform: uppercase; color: #0057B8; margin-bottom: 8px; display: flex; align-items: center; gap: 6px;">
+                            <span style="width: 6px; height: 6px; border-radius: 50%; background: #0057B8;"></span>
+                            Monitor &amp; Diagnose
+                        </div>
+                        <div style="display: flex; flex-direction: column; gap: 4px;">
+                            <div style="font-size: 12px; font-family: 'SF Mono','Fira Code',monospace; padding: 4px 8px; border-radius: 5px; background: rgba(0,87,184,0.06); border: 1px solid rgba(0,87,184,0.14); font-weight: 600; color: var(--text);">analyze_health</div>
+                            <div style="font-size: 12px; font-family: 'SF Mono','Fira Code',monospace; padding: 4px 8px; border-radius: 5px; background: rgba(0,87,184,0.06); border: 1px solid rgba(0,87,184,0.14); font-weight: 600; color: var(--text);">get_model_health</div>
+                            <div style="font-size: 12px; font-family: 'SF Mono','Fira Code',monospace; padding: 4px 8px; border-radius: 5px; color: var(--muted);">get_auc_trend</div>
+                            <div style="font-size: 12px; font-family: 'SF Mono','Fira Code',monospace; padding: 4px 8px; border-radius: 5px; color: var(--muted);">get_fatigue_scores</div>
+                            <div style="font-size: 12px; font-family: 'SF Mono','Fira Code',monospace; padding: 4px 8px; border-radius: 5px; color: var(--muted);">get_timing_data</div>
+                        </div>
+                    </div>
+
+                    <!-- CATALOGUE -->
+                    <div style="background: var(--card); border: 1px solid var(--border); border-radius: 10px; padding: 12px 14px;">
+                        <div style="font-size: 10px; font-weight: 800; letter-spacing: 0.1em; text-transform: uppercase; color: #C41C00; margin-bottom: 8px; display: flex; align-items: center; gap: 6px;">
+                            <span style="width: 6px; height: 6px; border-radius: 50%; background: #C41C00;"></span>
+                            Action Catalogue
+                        </div>
+                        <div style="display: flex; flex-direction: column; gap: 4px;">
+                            <div style="font-size: 12px; font-family: 'SF Mono','Fira Code',monospace; padding: 4px 8px; border-radius: 5px; background: rgba(196,28,0,0.05); border: 1px solid rgba(196,28,0,0.14); font-weight: 600; color: var(--text);">list_actions</div>
+                            <div style="font-size: 12px; font-family: 'SF Mono','Fira Code',monospace; padding: 4px 8px; border-radius: 5px; color: var(--muted);">create_action</div>
+                            <div style="font-size: 12px; font-family: 'SF Mono','Fira Code',monospace; padding: 4px 8px; border-radius: 5px; color: var(--muted);">update_action</div>
+                            <div style="font-size: 12px; font-family: 'SF Mono','Fira Code',monospace; padding: 4px 8px; border-radius: 5px; color: var(--muted);">delete_action</div>
+                            <div style="font-size: 12px; font-family: 'SF Mono','Fira Code',monospace; padding: 4px 8px; border-radius: 5px; color: var(--muted);">toggle_action</div>
+                        </div>
+                    </div>
+
+                    <!-- COMPOSITIONS -->
+                    <div style="background: var(--card); border: 1px solid var(--border); border-radius: 10px; padding: 12px 14px;">
+                        <div style="font-size: 10px; font-weight: 800; letter-spacing: 0.1em; text-transform: uppercase; color: #C89000; margin-bottom: 8px; display: flex; align-items: center; gap: 6px;">
+                            <span style="width: 6px; height: 6px; border-radius: 50%; background: #C89000;"></span>
+                            Compositions
+                        </div>
+                        <div style="display: flex; flex-direction: column; gap: 4px;">
+                            <div style="font-size: 12px; font-family: 'SF Mono','Fira Code',monospace; padding: 4px 8px; border-radius: 5px; background: rgba(200,144,0,0.06); border: 1px solid rgba(200,144,0,0.14); font-weight: 600; color: var(--text);">get_composition_queue</div>
+                            <div style="font-size: 12px; font-family: 'SF Mono','Fira Code',monospace; padding: 4px 8px; border-radius: 5px; color: var(--muted);">approve_composition</div>
+                            <div style="font-size: 12px; font-family: 'SF Mono','Fira Code',monospace; padding: 4px 8px; border-radius: 5px; color: var(--muted);">dismiss_composition</div>
+                            <div style="font-size: 12px; font-family: 'SF Mono','Fira Code',monospace; padding: 4px 8px; border-radius: 5px; color: var(--muted);">promote_composition</div>
+                        </div>
+                    </div>
+
+                    <!-- GOALS & CONFIG -->
+                    <div style="background: var(--card); border: 1px solid var(--border); border-radius: 10px; padding: 12px 14px;">
+                        <div style="font-size: 10px; font-weight: 800; letter-spacing: 0.1em; text-transform: uppercase; color: #007A72; margin-bottom: 8px; display: flex; align-items: center; gap: 6px;">
+                            <span style="width: 6px; height: 6px; border-radius: 50%; background: #007A72;"></span>
+                            Goals &amp; Config
+                        </div>
+                        <div style="display: flex; flex-direction: column; gap: 4px;">
+                            <div style="font-size: 12px; font-family: 'SF Mono','Fira Code',monospace; padding: 4px 8px; border-radius: 5px; background: rgba(0,122,114,0.06); border: 1px solid rgba(0,122,114,0.14); font-weight: 600; color: var(--text);">configure_policy</div>
+                            <div style="font-size: 12px; font-family: 'SF Mono','Fira Code',monospace; padding: 4px 8px; border-radius: 5px; background: rgba(0,122,114,0.06); border: 1px solid rgba(0,122,114,0.14); font-weight: 600; color: var(--text);">get_settings</div>
+                            <div style="font-size: 12px; font-family: 'SF Mono','Fira Code',monospace; padding: 4px 8px; border-radius: 5px; color: var(--muted);">create_goal</div>
+                            <div style="font-size: 12px; font-family: 'SF Mono','Fira Code',monospace; padding: 4px 8px; border-radius: 5px; color: var(--muted);">list_goals</div>
+                            <div style="font-size: 12px; font-family: 'SF Mono','Fira Code',monospace; padding: 4px 8px; border-radius: 5px; color: var(--muted);">update_goal &middot; delete_goal</div>
+                        </div>
+                    </div>
+
                 </div>
 
-                <div class="tool-grid">
-                    <div class="tool-card">
-                        <span class="tool-num">01</span>
-                        <div>
-                            <div class="tool-name">list_actions</div>
-                            <div class="tool-desc">Browse the full action catalogue</div>
-                        </div>
-                    </div>
-                    <div class="tool-card">
-                        <span class="tool-num">02</span>
-                        <div>
-                            <div class="tool-name">create_action</div>
-                            <div class="tool-desc">Add a new action to the catalogue</div>
-                        </div>
-                    </div>
-                    <div class="tool-card">
-                        <span class="tool-num">03</span>
-                        <div>
-                            <div class="tool-name">update_action</div>
-                            <div class="tool-desc">Modify action parameters</div>
-                        </div>
-                    </div>
-                    <div class="tool-card">
-                        <span class="tool-num">04</span>
-                        <div>
-                            <div class="tool-name">delete_action</div>
-                            <div class="tool-desc">Remove an action from catalogue</div>
-                        </div>
-                    </div>
-                    <div class="tool-card">
-                        <span class="tool-num">05</span>
-                        <div>
-                            <div class="tool-name">toggle_action</div>
-                            <div class="tool-desc">Pause or activate an action</div>
-                        </div>
-                    </div>
-                    <div class="tool-card">
-                        <span class="tool-num">06</span>
-                        <div>
-                            <div class="tool-name">query_decisions</div>
-                            <div class="tool-desc">Search and filter past decisions</div>
-                        </div>
-                    </div>
-                    <div class="tool-card">
-                        <span class="tool-num">07</span>
-                        <div>
-                            <div class="tool-name">explain_decision</div>
-                            <div class="tool-desc">Full audit trail for any decision</div>
-                        </div>
-                    </div>
-                    <div class="tool-card">
-                        <span class="tool-num">08</span>
-                        <div>
-                            <div class="tool-name">run_simulation</div>
-                            <div class="tool-desc">Simulate NBA for a contact</div>
-                        </div>
-                    </div>
-                    <div class="tool-card">
-                        <span class="tool-num">09</span>
-                        <div>
-                            <div class="tool-name">get_model_health</div>
-                            <div class="tool-desc">Model status, AUC, training state</div>
-                        </div>
-                    </div>
-                    <div class="tool-card">
-                        <span class="tool-num">10</span>
-                        <div>
-                            <div class="tool-name">get_auc_trend</div>
-                            <div class="tool-desc">Historical AUC performance data</div>
-                        </div>
-                    </div>
-                    <div class="tool-card">
-                        <span class="tool-num">11</span>
-                        <div>
-                            <div class="tool-name">analyze_health</div>
-                            <div class="tool-desc">Run full health analysis</div>
-                        </div>
-                    </div>
-                    <div class="tool-card">
-                        <span class="tool-num">12</span>
-                        <div>
-                            <div class="tool-name">get_attribution</div>
-                            <div class="tool-desc">Outcome attribution breakdown</div>
-                        </div>
-                    </div>
-                    <div class="tool-card">
-                        <span class="tool-num">13</span>
-                        <div>
-                            <div class="tool-name">get_composition_queue</div>
-                            <div class="tool-desc">Pending composed treatments</div>
-                        </div>
-                    </div>
-                    <div class="tool-card">
-                        <span class="tool-num">14</span>
-                        <div>
-                            <div class="tool-name">approve_composition</div>
-                            <div class="tool-desc">Approve a composed treatment</div>
-                        </div>
-                    </div>
-                    <div class="tool-card">
-                        <span class="tool-num">15</span>
-                        <div>
-                            <div class="tool-name">dismiss_composition</div>
-                            <div class="tool-desc">Reject with structured feedback</div>
-                        </div>
-                    </div>
-                    <div class="tool-card">
-                        <span class="tool-num">16</span>
-                        <div>
-                            <div class="tool-name">promote_composition</div>
-                            <div class="tool-desc">Promote to permanent catalogue</div>
-                        </div>
-                    </div>
-                    <div class="tool-card">
-                        <span class="tool-num">17</span>
-                        <div>
-                            <div class="tool-name">get_settings</div>
-                            <div class="tool-desc">Current engine configuration</div>
-                        </div>
-                    </div>
-                    <div class="tool-card">
-                        <span class="tool-num">18</span>
-                        <div>
-                            <div class="tool-name">configure_policy</div>
-                            <div class="tool-desc">Set contact-level policies</div>
-                        </div>
-                    </div>
-                </div>
-
-                <p class="sub" style="text-align: center; max-width: 700px; margin: 8px auto 0; font-size: clamp(12px, 1.1vw, 14px);">The UI is for humans. These tools are for agents. Any AI system that speaks MCP can operate this engine.</p>
+                <p class="sub" style="text-align: center; max-width: 740px; margin: 8px auto 0; font-size: clamp(11px, 1vw, 13px); color: var(--muted);">
+                    <strong style="color: var(--text);">Highlighted = most used.</strong> The UI is for humans. These tools are for agents. Any AI system that speaks MCP can operate this engine.
+                </p>
             </div>
         </section>
 
