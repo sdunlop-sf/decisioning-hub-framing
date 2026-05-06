@@ -341,6 +341,28 @@
             width: auto;
         }
 
+        /* ── ERAS TIMELINE ── */
+        .eras-row {
+            display: grid; grid-template-columns: repeat(4, 1fr); gap: 0;
+            width: 100%; max-width: 960px; position: relative;
+            border: 1px solid var(--border); border-radius: 16px; overflow: hidden;
+            background: #fff; box-shadow: 0 1px 3px rgba(0,39,117,0.07), 0 4px 18px rgba(0,39,117,0.07);
+        }
+        .era-col {
+            padding: 24px 20px; text-align: left; position: relative;
+        }
+        .era-col + .era-col { border-left: 1px solid var(--border); }
+        .era-col.current { background: rgba(2,42,192,0.04); }
+        .era-col.current::before {
+            content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px;
+            background: linear-gradient(90deg, var(--blue2), var(--teal));
+        }
+        .era-label { font-size: 10px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted); margin-bottom: 8px; }
+        .era-name { font-size: 16px; font-weight: 800; color: var(--text); margin-bottom: 4px; }
+        .era-years { font-size: 12px; color: var(--muted); margin-bottom: 10px; }
+        .era-tech { font-size: 12px; color: var(--dim); margin-bottom: 10px; line-height: 1.5; }
+        .era-constraint { font-size: 11px; color: var(--amber); font-weight: 600; font-style: italic; }
+
         /* ── MOMENTS THAT MATTER SLIDE ── */
         .mtm-row {
             display: flex;
@@ -601,7 +623,47 @@
             <div class="char" style="bottom: 56px; right: 80px;"><img src="char-agent-astro-2.png" alt=""></div>
         </section>
 
-        <!-- ═══════════ SLIDE 2: Moments That Matter ═══════════ -->
+        <!-- ═══════════ SLIDE 2: Four Eras ═══════════ -->
+        <section class="slide">
+            <div style="max-width: 960px; width: 100%;">
+                <div class="accent-line" style="margin: 0 auto 16px;"></div>
+                <div class="eyebrow">Four Eras of Customer Engagement</div>
+                <h2 class="big" style="font-size: clamp(26px, 3vw, 42px); margin-bottom: 28px;">Each era solved the constraint<br>of the one before.</h2>
+
+                <div class="eras-row">
+                    <div class="era-col">
+                        <div class="era-label">Era 1</div>
+                        <div class="era-name">Batch &amp; Blast</div>
+                        <div class="era-years">1990s &ndash; 2000s</div>
+                        <div class="era-tech">Email lists, direct mail</div>
+                        <div class="era-constraint">Couldn&rsquo;t personalise</div>
+                    </div>
+                    <div class="era-col">
+                        <div class="era-label">Era 2</div>
+                        <div class="era-name">Journey-Driven</div>
+                        <div class="era-years">2010s</div>
+                        <div class="era-tech">MCE, AMPscript, SQL</div>
+                        <div class="era-constraint">Couldn&rsquo;t arbitrate across state</div>
+                    </div>
+                    <div class="era-col">
+                        <div class="era-label">Era 3</div>
+                        <div class="era-name">Decisioned</div>
+                        <div class="era-years">mid-2010s &ndash; 2020s</div>
+                        <div class="era-tech">Rules engines, propensity models</div>
+                        <div class="era-constraint">Scores within its training &mdash; can&rsquo;t compose or explain</div>
+                    </div>
+                    <div class="era-col current">
+                        <div class="era-label">Era 4</div>
+                        <div class="era-name">Memory-First</div>
+                        <div class="era-years">2026 &rarr;</div>
+                        <div class="era-tech">Reasoning agents, compounding state</div>
+                        <div class="era-constraint" style="color: var(--green); font-style: normal;">&mdash;</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ═══════════ SLIDE 3: Moments That Matter ═══════════ -->
         <section class="slide mtm-slide">
             <div class="mtm-row">
                 <div class="mtm-text" style="text-align: left;">
